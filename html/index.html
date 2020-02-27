@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="Reset css" href="html/css/reset.css">
-    <link rel="Stylesheet" href="html/css/style.css">
+    <link rel="ResetCss" href="../css/reset.css">
+    <link rel="Stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
@@ -15,6 +15,7 @@
         <nav>
             <ul>
                 <li>Homepage</li>
+                <li><a href="../html/sales.html">Sales Data</a></li>
                 <li>About Salmon Cookies</li>
                 <li>Contact Us</li>
                 <li>Our Locations</li>
@@ -30,7 +31,32 @@
                     <tr>Sunday: OFF</tr>
                 </table>
         </main>
-        <link rel="Sales Data" href="sales.html">
+        <br>        
+        <form id="addNewLocation">
+            <fieldset>
+                <ul>
+                    <li>
+                      <label for="locationName">Location Name:</label>
+                      <input type="text" id="name" placeholder="Ente Name">
+                    </li>
+                    <li>
+                      <label for="minCustHour">Minimum # of Customers/Hour:</label>
+                      <input type="number" id="min" placeholder="Enter Number">
+                    </li>
+                    <li>
+                        <label for="maxCustHour">Maximum # of Customers/Hour:</label>
+                        <input type="number" id="max" placeholder="Enter Number">
+                      </li>
+                    <li>
+                        <label for="avgCookiesCust">Average Cookies/Customer:</label>
+                        <input type="number" id="avg" placeholder="Enter Number">
+                    </li>
+                </ul>
+                <li class="button">
+                    <button type="submit">Update Location Info</button>
+                </li>
+            </fieldset>
+        </form>
     </body>
     <footer>
         <p>Contact Us On:

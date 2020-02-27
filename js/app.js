@@ -8,6 +8,7 @@ function getRndmCustNmbrHour(minCustHour, maxCustHour) {
 
 var workHours = ['06:00','07:00','08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00'];
 var totalOfStores = [];
+var newLocation = [];
 var container = document.getElementById('cookiesStats');
 var h1El = document.createElement('h1');
 h1El.textContent = 'Pat\'s Salmon Cookies: Sales Data';
@@ -53,6 +54,7 @@ CookieLocation.prototype.bodyFun = function (){
   trEl.appendChild(tdfEl);
 };
 
+
 new CookieLocation('Seattle', '23', '65', '6.3');
 new CookieLocation('Tokyo', '3', '24', '1.2');
 new CookieLocation('Dubai', '11', '38', '3.7');
@@ -70,6 +72,9 @@ function headerFun(){
     thEl.textContent = workHours[x];
     trEl.appendChild(thEl);
   }
+  var thElTotal = document.createElement('th');
+  thElTotal.textContent = 'Total';
+  trEl.appendChild(thElTotal);
 }
 
 function footerFun(){
@@ -102,3 +107,17 @@ for (var i = 0; i < totalOfStores.length; i++) {
 }
 
 footerFun();
+
+var locationForm = document.getElementById('addNewLocation');
+locationForm.addEventListener('click' , function(event){
+  event.preventDefault();
+  console.log(event.target);
+  var locationName = event.target.locationName.value;
+  var minCustHour = event.target.minCustHour.value;
+  var maxCustHour = event.target.maxCustHour.value;
+  var avgCookiesCust = event.target.avgCookiesCust.value;
+  var extra = new CookieLocation(locationName, minCustHour, maxCustHour, avgCookiesCust);
+  extra.bodyFun();
+  newLocation.push(locationForm);
+  console.log(newLocation);
+});
