@@ -98,6 +98,7 @@ function footerFun(){
   var tdTotalOfTotal = document.createElement('td');
   tdTotalOfTotal.textContent= totalOfTotal;
   trEl.appendChild(tdTotalOfTotal);
+  console.log(totalHours);
 }
 
 
@@ -109,15 +110,15 @@ for (var i = 0; i < totalOfStores.length; i++) {
 footerFun();
 
 var locationForm = document.getElementById('addNewLocation');
-locationForm.addEventListener('click' , function(event){
+locationForm.addEventListener('submit' , function(event){
   event.preventDefault();
-  console.log(event.target);
-  var locationName = event.target.locationName.value;
-  var minCustHour = event.target.minCustHour.value;
-  var maxCustHour = event.target.maxCustHour.value;
-  var avgCookiesCust = event.target.avgCookiesCust.value;
+  var locationName = event.target.name.value;
+  var minCustHour = event.target.min.value;
+  var maxCustHour = event.target.max.value;
+  var avgCookiesCust = event.target.avg.value;
   var extra = new CookieLocation(locationName, minCustHour, maxCustHour, avgCookiesCust);
   extra.bodyFun();
+  console.log(event.target.name.value);
+  // trEl.deleteRow(0);
   newLocation.push(locationForm);
-  console.log(newLocation);
 });
