@@ -6,50 +6,99 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab|Julius+Sans+One|Shadows+Into+Light&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Julius+Sans+One|Shadows+Into+Light&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=&display=swap"> -->
 </head>
 <body>
     <header>
         <h1>
             Salmon Cookies
         </h1>
+        <img src="../images/fish.jpg" alt="logo">
         <nav>
             <ul>
-                <li>Homepage</li>
+                <li><a href="index.html"> Homepage</a></li>
                 <li><a href="../html/sales.html">Sales Data</a></li>
-                <li>About Salmon Cookies</li>
-                <li>Contact Us</li>
-                <li>Our Locations</li>
             </ul>
         </nav>
     </header>
     <body>
         <main>
-            <h3>Our Working Hours</h2>
+            <div>
+                <h2>Welcome to Salmon Cookies</h2>
+                <article id="mainarticle">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                </article>
+            </div>
+            <div id="welcome">
+                <h3 id="content">On this page:</h3>
+                <ul id="contentlist">
+                    <li><a href="#about"> Why Salmon Cookies</a></li>
+                    <li><a href="#hours"> Hours of Operation</a></li>
+                    <li><a href="#locations"> Our Locations</a></li>
+                    <li><a href="#contact"> Contact Us</a></li>
+                </ul>
+            </div>
+            <section>
+                <h3 id="about">Why Salmon Cookies</h3>
+                <article id="aboutarticle">
+                    <h4>About Us</h4>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+               
+                    <h4>Our Story</h4>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+               
+                </article>
+                <div id="familyimg"><img src="../images/family.jpg" alt="family" style="border-radius: 190px;"></div>
+            </section>
+            <div>
+                <h3 id="hours">Hours of Operation</h3>
+                <div id="table">
                 <table>
-                    <tr>Monday-Friday: 06:00-19:00</tr>
-                    <tr>Saturday: 12:00-16:00</tr>
-                    <tr>Sunday: OFF</tr>
+                    <tbody>
+                        <tr>
+                            <th>Monday-Friday: </th>
+                            <td>06:00-19:00</td>
+                        </tr>
+                        <tr>
+                            <th>Saturday:</th>
+                            <td>12:00-16:00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        <th>Sunday:</th>
+                        <td>OFF</td>
+                        </tr>
+                    </tfoot>
                 </table>
+                </div>
+            </div>
+            <div style="float: left;">
+                <h3 id="locations">Our Locations</h3>
+                <ul id="maps">
+                <li>Seattle @ 2901 3rd Ave #300, Seattle, WA 98121, United States</li>
+                <li>Tokyo
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662934.3670812168!2d138.64838210307954!3d35.50628883116211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sjo!4v1582989106716!5m2!1sen!2sjo" width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>                </li>
+                <li>Dubai</li>
+                <li>Paris</li>
+                <li>Lima</li>
+                </ul>
+            </div>
         </main>
     </body>
     <footer>
-        <p>Contact Us On:
+        <h4 id="contact">Contact Us On:</h4>
             <ul>
                 <li>Store Number: +1 365 888 3121</li>
                 <li>Sarah Pinkman: +1 289 365 9875</li>
             </ul>
-        </p>
-        <p>Or you can find your nearest Location:
-            <ul>
-                <li>Seattle @ 2901 3rd Ave #300, Seattle, WA 98121, United States</li>
-                <li>Tokyo</li>
-                <li>Dubai</li>
-                <li>Paris</li>
-                <li>Lima</li>
-            </ul>
-        </p>
-
     </footer>
 </body>
 </html>

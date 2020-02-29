@@ -10,7 +10,7 @@ var workHours = ['06:00','07:00','08:00','09:00','10:00','11:00','12:00','13:00'
 var totalOfStores = [];
 var newLocation = [];
 var container = document.getElementById('cookiesStats');
-var h1El = document.createElement('h1');
+var h1El = document.createElement('h3');
 h1El.textContent = 'Pat\'s Salmon Cookies: Sales Data';
 container.appendChild(h1El);
 var tableEl = document.createElement('table');
