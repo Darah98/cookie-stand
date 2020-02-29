@@ -11,9 +11,13 @@ h1{
     font-family: 'Shadows Into Light';
     color: #7d9bd4;
     font-size: 6em;
-    margin-left: 300px;
+    margin-left: 330px;
     text-align: center;
     margin-top: 7px;
+    text-shadow: 2px 3px 5px white;
+    margin-bottom: -7px;
+
+
 }
 nav li{
     display: inline-block;
@@ -106,12 +110,14 @@ section h3{
     float: left;
     margin-left: 100px;
     margin-top: 30px;
-    width: 1100px;
+    width: 900px;
     height: 250px;
     overflow: overlay;
     color: #e7e7ec;
     margin-bottom: 50px;
-
+    border: solid;
+    padding: 20px 40px;
+    border-radius: 10px;
 }
 article h4{
     font-size: 2em;
@@ -127,33 +133,30 @@ article h4{
     margin: auto;
 }
 #hours{
-    float: left;
     font-family: 'Shadows Into Light';
     color: #e8e8ec;
     font-size: 3em;
     margin-top: 80px;
-    margin-left: 50px;
-}
-#table{
-    float: left;
-    margin-left: 0;
-    margin-top: 200px;
-    font-size: x-large;
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
 }
 #locations{
-    float: left;
     font-family: 'Shadows Into Light';
     color: #e8e8ec;
     font-size: 3em;
     margin-top: 80px;
     margin-left: 50px;
+    background-color: #798dc4;
+    border: solid #e8e8ec;
+    border-radius: 35px;
+    text-align: center;
+
 }
 #maps{
-    text-decoration: none;
     list-style-type: none;
-    float: left;
-    margin-top: 200px;
-    margin-left: -100px;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 #contact{
     float: left;
@@ -166,11 +169,64 @@ article h4{
 footer{
     background-color: #5b6ead;
     float: left;
-    margin-top: 200px;
-    height: 92px;
     width: 100%;
 }
-footer ul{
+#phonenumbers{
     list-style-type: none;
     float: right;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+#work{
+    text-align: center;
+    line-height: 45px;
+}
+#tableleft{
+    float: left;
+    font-size: 1.7em;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+#tableright{
+    float: right;
+    font-size: 1.7em;
+    margin-top: 50px;
+    margin-right: 400px;
+}
+.tablehead{
+    background-color: #c2c2d4;
+    color: #2a2b72;
+    width: 200px;
+    border-radius: 15px;
+}
+.placename{
+    display: inline-block;
+    font-size: 50px;
+    padding: 45px;
+
+}
+#earthdiv{
+    margin-top: -25px;
+    padding-left: 45px;
+
+}
+.earthmap{
+    margin: 0px 29px;
+}
+#lastitem{
+    float: left;
+}
+footer p{
+    float: right;
+    margin-top: 50px;
+}
+#topbutton{
+    position: fixed;
+    font-size: 25px;
+    background-color: #5b6ead;
+    bottom: 20px;
+    right: 15px;
+    border: solid #e8e8ec;
+    border-radius: 39px;
+    padding: 5px;
 }

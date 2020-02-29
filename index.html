@@ -13,18 +13,23 @@
         <h1>
             Salmon Cookies
         </h1>
-        <img src="images/fish.jpg" alt="logo">
+        <img src="images/fish.jpg" alt="logo" style="box-shadow: -5px 0px 30px;
+        border: solid;
+        border-top-right-radius: 0px;">
         <nav>
             <ul>
                 <li><a href="index.html"> Homepage</a></li>
                 <li><a href="sales.html">Sales Data</a></li>
             </ul>
         </nav>
+        <div>
+            <p id="topbutton"><a href="#greeting"> Top</a></p>
+        </div>
     </header>
     <body>
         <main>
             <div>
-                <h2>Welcome to Salmon Cookies</h2>
+                <h2 id="greeting">Welcome to Salmon Cookies</h2>
                 <article id="mainarticle">
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
@@ -56,48 +61,62 @@
                 </article>
                 <div id="familyimg"><img src="images/family.jpg" alt="family" style="border-radius: 190px;"></div>
             </section>
-            <div>
+            <div id="work">
                 <h3 id="hours">Hours of Operation</h3>
-                <div id="table">
-                <table>
-                    <tbody>
-                        <tr>
-                            <th>Monday-Friday: </th>
-                            <td>06:00-19:00</td>
-                        </tr>
-                        <tr>
-                            <th>Saturday:</th>
-                            <td>12:00-16:00</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                        <th>Sunday:</th>
-                        <td>OFF</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="textformat" id="tableleft">
+                    <article class="tablehead">Day</article>
+                    <p>Monday <br> Tuesday <br> Wednesday <br> Thursday <br> Friday <br> Saturday <br> Sunday </p>
+                </div>
+                <div class="textformat" id="tableright">
+                    <article class="tablehead">Hours</article>
+                    <p>06:00 - 19:00 <br> 06:00 - 19:00  <br> 06:00 - 19:00  <br> 06:00 - 19:00  <br> 06:00 - 19:00  <br> 10:00 - 16:00  <br> OFF </p>
+
                 </div>
             </div>
-            <div style="float: left;">
+            <div style="float: left; text-align: center; margin-bottom: 100px;">
                 <h3 id="locations">Our Locations</h3>
+                <img src="http://getdrawings.com/vectors/map-pin-icon-vector-6.png" alt="pin" 
+                style="width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: -65px;
+                margin-left: 474px;">
                 <ul id="maps">
-                <li>Seattle @ 2901 3rd Ave #300, Seattle, WA 98121, United States</li>
-                <li>Tokyo
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662934.3670812168!2d138.64838210307954!3d35.50628883116211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sjo!4v1582989106716!5m2!1sen!2sjo" width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>                </li>
-                <li>Dubai</li>
-                <li>Paris</li>
-                <li>Lima</li>
+                    <li class="placename">Seattle</li>
+                    <li class="placename">Tokyo</li>
+                    <li class="placename">Dubai</li>
+                    <li class="placename">Paris</li>
+                    <li class="placename">Lima</li>
                 </ul>
+                <div id="earthdiv">
+                    <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172138.65426477903!2d-122.48215097725323!3d47.61317464206057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sjo!4v1583007079483!5m2!1sen!2sjo" 
+                    width="170" height="100" frameborder="0" 
+                    style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                    <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662934.3670812168!2d138.64838210307954!3d35.50628883116211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sjo!4v1582989106716!5m2!1sen!2sjo" 
+                    width="170" height="100" frameborder="0" 
+                    style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                    <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.84784953913!2d54.94753832671299!3d25.07570733316579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sjo!4v1583007265566!5m2!1sen!2sjo" 
+                    width="170" height="100" frameborder="0" 
+                    style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                    <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.75769332101!2d2.2770194086961215!3d48.858950681742016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sjo!4v1583007358539!5m2!1sen!2sjo" 
+                    width="170" height="100" frameborder="0" 
+                    style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                    <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499488.8829099233!2d-77.26799036194863!3d-12.02582694356759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima%2C%20Peru!5e0!3m2!1sen!2sjo!4v1583007420486!5m2!1sen!2sjo" 
+                    width="170" height="100" frameborder="0" 
+                    style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                </div>
             </div>
         </main>
     </body>
     <footer>
-        <h4 id="contact">Contact Us On:</h4>
-            <ul>
-                <li>Store Number: +1 365 888 3121</li>
-                <li>Sarah Pinkman: +1 289 365 9875</li>
+        <div id="lastitem">
+            <h4 id="contact">Contact Us</h4>
+            <ul id="phonenumbers">
+                <li>CALL Us @ +1 365 888 3121</li>
+                <li>Or TEXT 'Hello!' to +1 289 365 9875</li>
             </ul>
+        </div>
+        <p>© 2020 Darah Shalabi. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
