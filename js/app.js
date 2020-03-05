@@ -107,10 +107,11 @@ for (var i = 0; i < totalOfStores.length; i++) {
   totalOfStores[i].bodyFun();
 }
 
-footerFun();
 
 var locationForm = document.getElementById('addNewLocation');
 locationForm.addEventListener('submit' , function(event){
+  tableEl.deleteRow(-1);
+
   event.preventDefault();
   var locationName = event.target.name.value;
   var minCustHour = event.target.min.value;
@@ -119,6 +120,8 @@ locationForm.addEventListener('submit' , function(event){
   var extra = new CookieLocation(locationName, minCustHour, maxCustHour, avgCookiesCust);
   extra.bodyFun();
   console.log(event.target.name.value);
-  // trEl.deleteRow(0);
   newLocation.push(locationForm);
+  locationForm.reset();
+  footerFun();
 });
+footerFun();
