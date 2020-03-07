@@ -3,10 +3,6 @@ body{
     background-color: rgb(43, 43, 114);
     color: #99b4e6;
 }
-#cookiesStats{
-    font-family: 'Julius Sans One', sans-serif;
-
-}
 h1{
     font-family: 'Shadows Into Light';
     color: #7d9bd4;
@@ -40,6 +36,9 @@ header img{
     float: right;
     margin-top: -111px;
     margin-right: 59px;
+    box-shadow: -5px 0px 30px;
+    border: solid;
+    border-top-right-radius: 0px;
 }
 nav{
     background-color: #5c6ead;
@@ -96,7 +95,6 @@ main div a{
 }
 main div a:hover{
     color: #2a2b72;
-    list-style-image: url(../images/salmon.png);
 }
 section h3{
     float: left;

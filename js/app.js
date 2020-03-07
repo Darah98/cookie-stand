@@ -41,7 +41,7 @@ CookieLocation.prototype.listCookies = function(){
 CookieLocation.prototype.bodyFun = function (){
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
-  var td0El = document.createElement('td');
+  var td0El = document.createElement('th');
   td0El.textContent= this.locationName;
   trEl.appendChild(td0El);
   for (var c = 0; c < workHours.length; c++) {
@@ -64,8 +64,8 @@ new CookieLocation('Lima', '2', '16', '4.6');
 function headerFun(){
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
-  var td0El = document.createElement('td');
-  td0El.textContent= '  ';
+  var td0El = document.createElement('th');
+  td0El.textContent= 'Location';
   trEl.appendChild(td0El);
   for (var x = 0; x < workHours.length; x++) {
     var thEl = document.createElement('th');
@@ -80,7 +80,7 @@ function headerFun(){
 function footerFun(){
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
-  var td0El = document.createElement('td');
+  var td0El = document.createElement('th');
   td0El.textContent= 'Totals';
   trEl.appendChild(td0El);
   var totalHours;

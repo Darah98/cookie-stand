@@ -1,21 +1,23 @@
 body{
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Julius Sans One', sans-serif;
     background-color: rgb(43, 43, 114);
     color: #99b4e6;
-    width: 1000px;
-    margin: auto;
 }
-#cookiesStats{
-    font-family: 'Julius Sans One', sans-serif;
+nav ul{
+    font-family: 'Roboto Slab', serif;
 
 }
 h1{
     font-family: 'Shadows Into Light';
     color: #7d9bd4;
     font-size: 6em;
-    margin-left: 160px;;
+    margin-left: 330px;
     text-align: center;
     margin-top: 7px;
+    text-shadow: 2px 3px 5px white;
+    margin-bottom: -7px;
+
+
 }
 nav li{
     display: inline-block;
@@ -30,7 +32,6 @@ a{
     text-decoration: none;
     color: #2a2b72;
 }
-
 header img{
     width: 80px;
     height: 80px;
@@ -38,26 +39,249 @@ header img{
     float: right;
     margin-top: -111px;
     margin-right: 59px;
+    box-shadow: -5px 0px 30px;
+    border: solid;
+    border-top-right-radius: 0px;
 }
 nav{
     background-color: #5c6ead;
     font-size: 30px;
     margin-top: -15px;
+    font-family: 'Roboto Slab', serif;
 }
-#addNewLocation{
-    font-size: 2em;
-    margin-top: 50px;
-    margin-left: 30px;
-    background-color: #5b6ead;
-    color: #c8dbf6;
-    padding: 35px;
-    border-radius: 20px;
+main h2{
+    font-family: 'Shadows Into Light';
+    color: #e8e8ec;
+    margin-left: 80px;
+    margin-top: 55px;
+    font-size: 3em;
 }
-li{
-    list-style-type: none;
+#cookiesStats{
+    float: left;
+    margin-top: 60px;
+
+}
+#cookiesStats table{
+    font-size: 1em;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 h3{
-    padding: 20px;
-    font-size: 30px;
+    font-family: 'Shadows Into Light';
+    color: #e8e8ec;
+    margin-top: 55px;
+    font-size: 3em;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    float: left;
+    border-bottom: solid #e8e8ec;
+}
+th{
+    border: solid #e8e8ec;
+    padding: 10px;
+    text-align: center;
+    color: #e8e8ec;
+    font-size: 1em;
+    font-size: 1.1em;
+    background-color: #788cc4;
+    color: #2b2b72;
+}
+td{
+    border: solid #e8e8ec;
+    padding: 10px;
+    text-align: center;
+}
+#welcome{
+    float: right;
+    background-color: #d3e3f8;
+    width: 450px;
+    height: 250px;
+    border-radius: 32px;
+    margin-right: 50px;
+    margin-bottom: 32px;
+    margin-top: 52px;
+    box-shadow: 2px 2px 20px #747cae;
+    border: solid;
+    border-color: #7a83b2;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+}
+#content{
+    font-family: 'Shadows Into Light';
+    font-size: 3em;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: #8081b5;
+}
+#contentlist{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.7em;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 5px;
+    list-style-type: none;
+    margin-left: 130px;
+}
+#contentlist a{
+    color: #8081b5;
+}
+#contentlist a:hover{
+    color: #2a2b72;
+}
+#salmonpic img{
+    float: left;
+    border-radius: 45px;
+    margin-top: 65px;
+    margin-left: 100px;
+    transform: rotate(180deg);
+    transform: rotateY(180deg);
+    height: 250px;
+    width: 600px;
+    box-shadow: 0px 0px 20px #a5856b;
 
+}
+#addNewLocation{
+    float: left;
+}
+#locations{
+    font-family: 'Shadows Into Light';
+    color: #e8e8ec;
+    font-size: 3em;
+    margin-top: 80px;
+    margin-left: 50px;
+    background-color: #798dc4;
+    border: solid #e8e8ec;
+    border-radius: 35px;
+    text-align: center;
+
+}
+#maps{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#contact{
+    float: left;
+    font-family: 'Shadows Into Light';
+    color: #e8e8ec;
+    font-size: 3em;
+    margin-top: -6px;
+   margin-left: 50px;
+}
+footer{
+    font-family: 'Roboto Slab', serif;
+    background-color: #5b6ead;
+    float: left;
+    width: 100%;
+}
+#phonenumbers{
+    list-style-type: none;
+    float: right;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.placename{
+    display: inline-block;
+    font-size: 50px;
+    padding: 45px;
+
+}
+#earthdiv{
+    margin-top: -25px;
+    padding-left: 45px;
+
+}
+.earthmap{
+    margin: 0px 29px;
+}
+#lastitem{
+    float: left;
+}
+footer p{
+    float: right;
+    margin-top: 50px;
+}
+form{
+    background-color: #454b8d;
+    width: 700px;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 55px;
+    list-style-type: none;
+    border-radius: 15px;
+    margin: 30px 80px;
+
+}
+fieldset ul{
+    list-style-type: none;
+}
+fieldset li{
+    padding: 15px 0 15px 30px;
+}
+fieldset{
+    border: solid;
+    border-radius: 15px;
+}
+input{
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #e8e8ec;
+    margin-left: 20px;
+    height: 20px;
+    width: 300px;
+    text-align: left;
+    color: #2b2b72;
+    padding: 10px 0 10px 10px;
+    font-size: 25px;
+    font-weight: 900;    
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+
+}
+::placeholder{
+    color: #778bc4;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight: 100;  
+}
+button{
+    font-family: 'Julius Sans One', sans-serif;
+    width: 250px;
+    height: 50px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    border: solid #e8e8ec;
+    border-radius: 40px;   
+    background-color: #7b8ec6;
+    color: #2b2b72;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 5px 7px 15px;
+
+}
+input:focus{
+    outline-color:  #2b2b72;
+}
+button:hover{
+    background-color: #2b2b72;
+    color: #e8e8ec;
+    border: solid  #7b8ec6;
+    border-radius: 45px;  
+}
+#topbutton{
+    font-family: 'Roboto Slab', serif;
+    position: fixed;
+    font-size: 25px;
+    background-color: #5b6ead;
+    bottom: 20px;
+    right: 15px;
+    border: solid #e8e8ec;
+    border-radius: 39px;
+    padding: 5px;
 }

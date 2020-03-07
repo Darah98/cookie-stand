@@ -6,39 +6,64 @@
     <title>Sales Data</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/data.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Slab|Julius+Sans+One|Shadows+Into+Light&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Julius+Sans+One|Shadows+Into+Light&display=swap">
 </head>
 <body>
     <header>
         <h1>
             Salmon Cookies
         </h1>
-        <img src="../images/fish.jpg" alt="logo">
+        <img src="images/fish.jpg" alt="logo">
         <nav>
             <ul>
                 <li><a href="index.html"> Homepage</a></li>
                 <li><a href="sales.html">Sales Data</a></li>
             </ul>
         </nav>
+        <div>
+            <p id="topbutton"><a href="#greeting"> Top</a></p>
+        </div>
     </header>
     <main>
+        <h2 id="greeting">Welcome to Salmon Cookies' Data Page</h2>
+        <div id="maindiv">
+        <div id="salmonpic">
+            <img src="images/chinook.jpg" alt="">
+        </div>
+        <div id="welcome">
+            <h4 id="content">On this page:</h3>
+            <ul id="contentlist">
+                <li><a href="#cookiesStats"> Pat's Sales Data</a></li>
+                <li><a href="#formsection"> Add a Location</a></li>
+                <li><a href="#locations"> Our Locations</a></li>
+                <li><a href="#contact"> Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <container id="cookiesStats"></container>
+        <h3 id="formsection">Add New Location</h3>
         <form id="addNewLocation">
             <fieldset>
+                <legend>Location Information</legend>
                 <ul>
                     <li>
                       <label for="locationName">Location Name:</label>
-                      <input type="text" id="name" required placeholder="Ente Name">
+                      <br>
+                      <input type="text" id="name" required placeholder="Enter Name">
                     </li>
                     <li>
                       <label for="minCustHour">Minimum # of Customers/Hour:</label>
+                      <br>
                       <input type="number" id="min" required placeholder="Enter Number">
                     </li>
                     <li>
                         <label for="maxCustHour">Maximum # of Customers/Hour:</label>
+                        <br>
                         <input type="number" id="max" required placeholder="Enter Number">
                       </li>
                     <li>
                         <label for="avgCookiesCust">Average Cookies/Customer:</label>
+                        <br>
                         <input type="number" id="avg" required placeholder="Enter Number">
                     </li>
                 </ul>
@@ -47,9 +72,50 @@
                 </li>
             </fieldset>
         </form>
+        <div style="float: left; text-align: center; margin-bottom: 100px;">
+            <p id="locations">Our Locations</p>
+            <img src="http://getdrawings.com/vectors/map-pin-icon-vector-6.png" alt="pin" 
+            style="width: 50px;
+            height: 50px;
+            float: left;
+            margin-top: -65px;
+            margin-left: 474px;">
+            <ul id="maps">
+                <li class="placename">Seattle</li>
+                <li class="placename">Tokyo</li>
+                <li class="placename">Dubai</li>
+                <li class="placename">Paris</li>
+                <li class="placename">Lima</li>
+            </ul>
+            <div id="earthdiv">
+                <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172138.65426477903!2d-122.48215097725323!3d47.61317464206057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sjo!4v1583007079483!5m2!1sen!2sjo" 
+                width="170" height="100" frameborder="0" 
+                style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662934.3670812168!2d138.64838210307954!3d35.50628883116211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2sjo!4v1582989106716!5m2!1sen!2sjo" 
+                width="170" height="100" frameborder="0" 
+                style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.84784953913!2d54.94753832671299!3d25.07570733316579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sjo!4v1583007265566!5m2!1sen!2sjo" 
+                width="170" height="100" frameborder="0" 
+                style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.75769332101!2d2.2770194086961215!3d48.858950681742016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sjo!4v1583007358539!5m2!1sen!2sjo" 
+                width="170" height="100" frameborder="0" 
+                style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+                <iframe class="earthmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499488.8829099233!2d-77.26799036194863!3d-12.02582694356759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima%2C%20Peru!5e0!3m2!1sen!2sjo!4v1583007420486!5m2!1sen!2sjo" 
+                width="170" height="100" frameborder="0" 
+                style="border: solid; border-radius: 60px;" allowfullscreen=""></iframe>
+            </div>
+        </div>
     </main>
-    <li><a href="index.html">Index</a></li>
-   <container id="cookiesStats"></container>
+    <footer>
+        <div id="lastitem">
+            <h4 id="contact">Contact Us</h4>
+            <ul id="phonenumbers">
+                <li>CALL Us @ +1 365 888 3121</li>
+                <li>Or TEXT 'Hello!' to +1 289 365 9875</li>
+            </ul>
+        </div>
+        <p>© 2020 Darah Shalabi. All Rights Reserved.</p>
+    </footer>
     <script src="js/app.js"></script>
 </body>
 </html>
